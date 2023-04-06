@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Learning to Infer Inner-Body under Clothing from Monocular Video">
-  <meta name="keywords" content="Inner-Body, Monocular Video">
+        content="Narrator: Towards Natural Control of Human-Scene Interaction Generation via Relationship Reasoning">
+  <meta name="keywords" content="Natural Control, Human-Scene Interaction, Relationship Reasoning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Inner-Body Project Page</title>
+  <title>Narrator Project Page</title>
 
 
   </script>
@@ -70,27 +70,27 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Learning to Infer Inner-Body under Clothing from Monocular Video</h1>
-          <h1 class="title is-size-3" style="color:#5a6268;"> TVCG 2022 </h1>
+          <h1 class="title is-1 publication-title">Narrator: Towards Natural Control of Human-Scene Interaction Generation via Relationship Reasoning</h1>
+          <!-- <h1 class="title is-size-3" style="color:#5a6268;"> ICCV 2023 </h1> -->
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-			        <a href="https://haibiaoxuan.github.io/">Haibiao Xuan</a><sup>1</sup>,
-			      </span>
-			      <span class="author-block">
-			        Xiongzheng Li<sup>1</sup>,
-			      </span>
-			      <span class="author-block">
+		<a href="https://haibiaoxuan.github.io/">Haibiao Xuan</a><sup>1</sup>,
+	    </span>
+	    <span class="author-block">
+		Xiongzheng Li<sup>1</sup>,
+	    </span>
+	    <span class="author-block">
               <a href="https://zhangjinso.github.io/">Jinsong Zhang</a><sup>1</sup>,
-			      </span>
-			      <span class="author-block">
-			        <a href="https://hongwenzhang.github.io/">Hongwen Zhang</a><sup>2</sup>,
-			      </span>
-			      <span class="author-block">
-			        <a href="https://liuyebin.com">Yebin Liu</a><sup>2</sup>,
-			      </span>
-			      <span class="author-block">
-			        <a href="http://cic.tju.edu.cn/faculty/likun/">Kun Li</a><sup>1,*</sup>
-			      </span>
+	    </span>
+	    <span class="author-block">
+	        <a href="https://hongwenzhang.github.io/">Hongwen Zhang</a><sup>2</sup>,
+	    </span>
+	    <span class="author-block">
+	        <a href="https://liuyebin.com">Yebin Liu</a><sup>2</sup>,
+	    </span>
+	    <span class="author-block">
+		<a href="http://cic.tju.edu.cn/faculty/likun/">Kun Li</a><sup>1,*</sup>
+	    </span>
           </div>
 
           <div class="is-size-5 publication-authors">
@@ -212,8 +212,8 @@
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
           <!-- https://www.youtube.com/embed/xxxxx?rel=0&amp;showinfo=0 -->
-          <iframe src="http://cic.tju.edu.cn/faculty/likun/projects/Narrator/imgs/demo.mp4"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <video poster="" id="pixar_00" autoplay controls muted loop playsinline height="100%">
+            <source src="http://cic.tju.edu.cn/faculty/likun/projects/Narrator/imgs/demo.mp4" type="video/mp4">
         </div>
       </div>
     </div>
@@ -234,8 +234,8 @@
       </div>
       <p>
         Given a textual description, our approach can naturally and controllably generate semantically consistent and physically plausible human-scene interactions for various cases: 
-		(a) interactions guided by spatial relationships, (b) interactions guided by multiple actions, (c) multi-human scene interactions, 
-		and (d) human-scene interactions combining the above interaction types, which cannot be generated using prior works.
+	(a) interactions guided by spatial relationships, (b) interactions guided by multiple actions, (c) multi-human scene interactions, 
+	and (d) human-scene interactions combining the above interaction types, which cannot be generated using prior works.
       </p>
     </div>
   </div>
@@ -251,9 +251,9 @@
       </div>
       <p>
         Overview of the proposed Narrator framework. 
-		Given a scene and a textual description, multi-modal features including scene features, scene graph features, and action features are extracted (a), 
-		where the latter two are reasoned through our Joint Global and Local Scene Graph (b) and Part-Level Action (c), respectively. 
-		These features are then concatenated as a joint conditional embedding and fed into the transformer-based cVAE framework for human-scene interaction (d).
+	Given a scene and a textual description, multi-modal features including scene features, scene graph features, and action features are extracted (a), 
+	where the latter two are reasoned through our Joint Global and Local Scene Graph (b) and Part-Level Action (c), respectively. 
+	These features are then concatenated as a joint conditional embedding and fed into the transformer-based cVAE framework for human-scene interaction (d).
       </p>
     </div>
   </div>
@@ -269,8 +269,8 @@
       </div>
       <p>
         Qualitative comparison of interactions generated with our approach and three baselines. 
-		We present different textual queries in columns and different methods in rows. 
-		Overall, our interaction generations are semantically more consistent with textual descriptions and physically more realistic with scene interactions.
+	We present different textual queries in columns and different methods in rows. 
+	Overall, our interaction generations are semantically more consistent with textual descriptions and physically more realistic with scene interactions.
       </p>
     </div>
   </div>
