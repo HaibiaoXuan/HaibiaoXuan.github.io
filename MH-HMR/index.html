@@ -181,7 +181,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            
+	    Recovering 3D human meshes from monocular images is an inherently ill-posed and challenging task due to depth ambiguity, joint occlusion, and truncation. 
+	    However, most existing approaches do not model such uncertainties, typically yielding a single reconstruction for one input. 
+            In contrast, this paper embraces the ambiguity of the reconstruction and considers the problem as an inverse problem for which multiple feasible solutions exist. 
+	    To address these issues, we propose a multi-hypothesis approach, MH-HMR, to efficiently model the multi-hypothesis representation and build strong relationships among the hypothetical features. Specifically, the task is decomposed into three stages: 
+	    (1) generating a reasonable set of initial recovery results (i.e., multiple hypotheses) given a single color image; (2) modeling intrahypothesis refinement to enhance every single-hypothesis feature; (3) establishing inter-hypothesis communication and regressing the final human meshes. 
+	    Meanwhile, we further take advantage of multiple hypotheses and our recovery process to achieve human mesh recovery from multiple uncalibrated views. 
+            Compared with state-of-the-art methods, our approach MH-HMR achieves superior performance and recovers more accurate human meshes on challenging benchmark datasets like Human3.6M and 3DPW, while demonstrating our effectiveness across a variety of settings. 
+            The code will be publicly available for research purposes.            
           </p>
         </div>
       </div>
@@ -194,6 +201,7 @@
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
           <!-- https://www.youtube.com/embed/xxxxx?rel=0&amp;showinfo=0 -->
+	  <a href="http://cic.tju.edu.cn/faculty/likun/projects/MHPro/imgs/demo.mp4"> Video </a>
           <video poster="" id="pixar_00" autoplay controls muted loop playsinline height="100%">
             <source src="http://cic.tju.edu.cn/faculty/likun/projects/MHPro/imgs/demo.mp4" type="video/mp4">
         </div>
